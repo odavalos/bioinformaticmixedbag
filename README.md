@@ -108,8 +108,9 @@ FileZilla
     hostname:merced.ucmerced.edu
     username:myusername
     password:****
-    port:[22](https://serverfault.com/questions/74176/what-port-does-sftp-use/167872)
+    port:##
 
+Port (https://serverfault.com/questions/74176/what-port-does-sftp-use/167872)?
 
 
 ---
