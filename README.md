@@ -84,6 +84,12 @@ Multiple louvain cluster resolution function.
             sc.pl.umap(adata, color=res_list)
 
 
+---
+## Bash
+
+Find file names without extensions in a directory. 
+
+    basename -s .txt *
 
 
 
