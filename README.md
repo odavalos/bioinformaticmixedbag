@@ -89,7 +89,7 @@ Multiple louvain cluster resolution function.
 
 Find file names without extensions in a directory. 
 
-    basename -s .txt *
+`basename -s .txt *`
 
 
 
@@ -203,6 +203,9 @@ Example adapted from https://stackoverflow.com/a/53546634
     # load up jupyter lab or jupyter notebook     
 
 
+List available kernels:
+
+`juptyer kernelspec list`
 
 
 
