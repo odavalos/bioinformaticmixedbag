@@ -159,7 +159,20 @@ Example Cluster Script (Array Job)
     parallel-fastq-dump --split-files --origfmt --sra-id ${sra_a[$SLURM_ARRAY_TASK_ID]} --threads 16 --gzip
 
 
+Useful Slurm commands:
 
+View in use and queued nodes
+
+    squeue
+    -u; e.g. flag for username to view running/queued jobs
+
+
+
+View more detailed information about specific partitions (cleaner way than using squeue)
+
+    sinfo
+    -p, --partition; e.g. fast.q (4hr), std.q (24hr), long.q (14days)
+    -t, --states; e.g. down, comp, mix, alloc (currently in use), idle (ready for use)
 
 
 
