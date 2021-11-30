@@ -14,12 +14,8 @@ Interoperability between Seurat and Scanpy.
 | nCount_RNA   | n_counts         |
 | nFeature_RNA | n_genes          |
 | Read10X()    | sc.read_10x_h5() |
-|              |                  |
-|              |                  |
-|              |                  |
-|              |                  |
-|              |                  |
-|              |                  |
+
+
 
 
 Generating mutiple cluster resolutions in both Seurat and Scanpy:
