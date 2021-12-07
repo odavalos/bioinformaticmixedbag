@@ -104,7 +104,7 @@ Example Cluster Script (Regular Job)
     #SBATCH --nodes=1
     #SBATCH --ntasks=1
     #SBATCH --cpus-per-task=20
-    #SBATCH --p std.q
+    #SBATCH -p std.q
     #SBATCH --time=0-08:45:00
     #SBATCH --output=star_blk_aln.qlog
     #SBATCH --job-name=star_blk_aln
@@ -135,7 +135,7 @@ Example Cluster Script (Array Job)
     #SBATCH --nodes=1
     #SBATCH --ntasks=1
     #SBATCH --cpus-per-task=20
-    #SBATCH --p fast.q
+    #SBATCH -p fast.q
     #SBATCH --time=0-3:30:00
     #SBATCH --output=GSE74148_sraarray%A_%a.qlog
     #SBATCH --job-name=GSE74148_sra
