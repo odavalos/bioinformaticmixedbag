@@ -1,8 +1,124 @@
-## Bash
+# Bash
+
+List all the directories in current directory
+
+    ls -ldh */
+
+Same as above just in short version
+
+    ls -d */
 
 Find file names without extensions in a directory. 
 
-`basename -s .txt *`
+    basename -s .txt *
+
+
+Get names for all files in a directory without extensions
+
+    for i in *.ext; do basename $i .ext;done 
+
+
+Downloading files:
+
+    curl -O URL
+    
+- Without -O curl will start dumping the downloaded file on the stdout. 
+- Using -O downloads the files w/same name
+
+Zip all files in folder in parallel
+
+    parallel gzip ::: *
+
+
+Compress a whole directory:
+
+    tar -zcvf archive.tar.gz dir_name
+
+	-z # compress using gzip
+	-c # make archive
+	-v # I like verbose settings
+	-f # compressed archive file name
+
+Extract files 
+
+    tar -zxvf archive.tar.gz
+	-x # extract files
+
+Disk usage:
+
+Lists sizes in readable size format for files in a directory
+
+    du -lah
+
+Lists sizes in readable size format in a directory
+
+    du -h # directory/
+
+Lists grand total for the directory
+
+    du -sh # directory/
+
+Get sizes of directories based on gigs
+
+    du -ch dir/ | grep '[0-9,]G'
+
+File Removal:
+
+    rm file.txt # removes file
+
+**Powerful/dangerous**; this removes all files
+    
+    rm *
+    rm -R # removes files recursively 
+
+Removes all files in directory ending with '.ext'
+
+    rm *.ext
+
+---
+## Data Wrangling
+Looking at a dataset in a clean manner
+
+    head some_dataset.csv | less -S
+    cat samples.txt | sed -e 's/\t/|\t|/g' | column -s, -t | less -#5 -N -S
+
+Look at individual genes in the dataset
+
+    less -S some_dataset.csv | grep "Tox"
+
+
+Merging files with same header:
+
+    awk 'NR==1' some_dataset.csv # this allows us to pull the header
+    awk 'NR>1' aqidaily2008.csv | head # this prints everything but the header
+    awk '(NR == 1) || (FNR > 1)' dataset1.csv dataset2.csv | (head; tail)
+
+`(NR == 1)` includes the first line of the first file **header**, while `(FNR > 1)` skips the first line in the following files
+
+    awk '(NR == 1) || (FNR > 1)' *.csv > merged.csv
+
+
+
+---
+## Terminal Shortcuts (Mac)
+
+Cancel the current command/line: `Ctrl+C`
+
+Recall the deleted command: `Ctrl+Y (then Alt+Y)`
+
+Go to beginning of the line: `Ctrl+A`
+
+Go to end of the line: `Ctrl+E`
+
+Remove the forward words for example, if you are middle of the command: `Ctrl+K`
+
+Remove characters on the left, until the beginning of the word: `Ctrl+W`
+
+To clear your entire command prompt: `Ctrl+L`
+
+Toggle between the start of line and current cursor position: `Ctrl + XX`
+
+
 
 ---
 ## File transfer
@@ -46,4 +162,10 @@ List available kernels:
 
 `juptyer kernelspec list`
 
+---
+## Misc
+
+IP Address Lookup
+
+    ipconfig getifaddr en0
 
