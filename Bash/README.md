@@ -77,6 +77,7 @@ Removes all files in directory ending with '.ext'
 
 ---
 ## Data Wrangling
+
 Looking at a dataset in a clean manner
 
     head some_dataset.csv | less -S
@@ -97,7 +98,13 @@ Merging files with same header:
 
     awk '(NR == 1) || (FNR > 1)' *.csv > merged.csv
 
+Print stderr and stdout use `2>&1`
 
+	kallisto quant -i /Users/username/data/mus_mus/GRCm38.p6_rna.idx -o ${base}kallisto_quant_test --threads=4 --plaintext $R1 $R2 >> kallisto.log 2>&1
+
+Print out a log file using `2>`
+
+	featureCounts -p -a {input.g} -t gene -g gene_id -T {threads} -o {output} {input.bams} 2> {log}
 
 ---
 ## Terminal Shortcuts (Mac)
