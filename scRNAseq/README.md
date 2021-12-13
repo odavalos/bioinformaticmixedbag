@@ -1,6 +1,7 @@
 ## scRNA-seq
 
-Interoperability between Seurat and Scanpy.
+Seurat and Scanpy equivalent functions.
+
  - If going from Seurat to scanpy need to convert Seurat object into AnnData object.
 
 
