@@ -22,7 +22,7 @@ Comparing two files using `diff`
 	diff seq1.fa seq2.fa
 	-q # quickly see if files are different
 	-s # shows a message
-	-s # side by side differences on screen
+	-y # side by side differences on screen
 
 Downloading files:
 
