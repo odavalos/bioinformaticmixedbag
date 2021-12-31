@@ -80,6 +80,12 @@ Example Cluster Script (Array Job)
 ---
 ## Useful Slurm commands
 
+To delay job start add this to the job script
+
+    #SBATCH --begin=now+1hour # this delays for 1 hour
+    #SBATCH --begin=16:00 # starts at 4pm
+    #SBATCH --begin=now+60 # 60 seconds (default)
+
 If you want to test your job and find out when your job is estimated to run use (note this does not actually submit the job):
 
     sbatch --test-only myscript.sh
