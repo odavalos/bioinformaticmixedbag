@@ -166,7 +166,7 @@ Example adapted from https://stackoverflow.com/a/53546634
 
     conda activate env_name # following the creating environment code above
     conda install ipykernel
-    python -m ipython kernel install --user --name=give_kernal_a_name
+    ipython kernel install --user --name=give_kernal_a_name
     conda deactivate
     # load up jupyter lab or jupyter notebook     
 
