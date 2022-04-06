@@ -12,6 +12,9 @@ Find file names without extensions in a directory.
 
     basename -s .txt *
 
+List full path for all subdirectories in a directory
+
+	find "$PWD" -type d
 
 Get names for all files in a directory without extensions
 
