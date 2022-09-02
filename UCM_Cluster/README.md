@@ -1,5 +1,8 @@
 # UCM Cluster
 
+[Documentation](https://ucmerced.github.io/hpc_docs/#/)
+
+
 ## Data Upload and Download - Cluster
 
 Cluster to local
