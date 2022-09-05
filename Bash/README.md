@@ -162,6 +162,12 @@ Here is an example of how to create an environment with some of the essentials.
 
     conda create -n env_name python=3.9 pandas scipy numpy matplotlib seaborn
 
+#### My Conda setup
+
+I like to use [Emacs text editor](https://anaconda.org/conda-forge/emacs) but need to make sure to modify ~/.bashrc
+
+	emacs -nw ~/.bashrc
+Add `alias emacs='emacs -nw'`
 
 #### [Adding environment to jupyter kernals:](https://stackoverflow.com/a/53546634)
 
