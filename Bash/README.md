@@ -8,6 +8,10 @@ Same as above just in short version
 
     ls -d */
 
+Print the newest file in current directory (from https://unix.stackexchange.com/a/223305)
+
+	cat "$(ls -rt | tail -n1)"
+
 Find file names without extensions in a directory. 
 
     basename -s .txt *
