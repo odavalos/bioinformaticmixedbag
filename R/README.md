@@ -7,7 +7,11 @@ RStudio multicursor: click and drag mouse down or up while holding down `option`
     trace("thefunction",edit=TRUE)
 
 
+Use filter inside a function (Tidy Eval)
 
+https://stackoverflow.com/a/61617180
+
+https://stackoverflow.com/a/54948070
 
 
 
