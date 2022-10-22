@@ -6,6 +6,8 @@ This repository has various notes and scripts that I have put together over the 
 
 [R](R/README.md)
 
+[ML](ML/README.md)
+
 [Bash](Bash/README.md)
 
 [Python](Python/README.md)
