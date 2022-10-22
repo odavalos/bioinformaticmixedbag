@@ -3,7 +3,7 @@
 ## Interpretable ML
 
 If you want to build interpretable models read this book by Christoph Molnar: [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
-- Provides advantages and disadvantages to a wide range of methods
+- Provides advantages and disadvantages to a wide range of interpretability methods
 
 
 #### Random Forest
