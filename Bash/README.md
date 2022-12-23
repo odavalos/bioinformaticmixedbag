@@ -104,7 +104,7 @@ Look at individual genes in the dataset
 Merging files with same header:
 
     awk 'NR==1' some_dataset.csv # this allows us to pull the header
-    awk 'NR>1' aqidaily2008.csv | head # this prints everything but the header
+    awk 'NR>1' data.csv | head # this prints everything but the header
     awk '(NR == 1) || (FNR > 1)' dataset1.csv dataset2.csv | (head; tail)
 
 `(NR == 1)` includes the first line of the first file **header**, while `(FNR > 1)` skips the first line in the following files
