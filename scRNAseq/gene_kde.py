@@ -19,7 +19,7 @@ def gene_kde(scan_obj, querygene, colormap = 'magma'):
     gene_sub_umap = pd.DataFrame(gene_subset.obsm['X_umap'], columns = ['UMAP_1', 'UMAP_2'])
     
     ##### scikit learn #####
-    X = gene_subset.X
+    X = gene_subset.X.toarray() 
     kde = KernelDensity(kernel='gaussian', bandwidth=0.2).fit(X)
     kde_scored = kde.score_samples(X)
     
