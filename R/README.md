@@ -1,6 +1,32 @@
 # R Grabbag
 
 
+#### Colorblind Friendly Palettes
+
+Four color blind friendly small palettes
+https://thenode.biologists.com/data-visualization-with-flying-colors/research/
+
+[Okabe_Ito](https://doi.org/10.1038/nmeth.1618)
+
+    cbpalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", 
+         "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+[Tol Palettes](https://personal.sron.nl/~pault/)
+
+    tol_bright <- c('#EE6677', '#228833', '#4477AA', '#CCBB44', '#66CCEE', '#AA3377', '#BBBBBB')
+
+Colorblind palette 10 colors
+
+    tol_muted <- c('#88CCEE', '#44AA99', '#117733', '#332288', '#DDCC77', '#999933','#CC6677', '#882255', '#AA4499', '#DDDDDD')
+
+Colorblind palette 9 colors
+
+    tol_light <- c('#BBCC33', '#AAAA00', '#77AADD', '#EE8866', '#EEDD88', '#FFAABB', '#99DDFF', '#44BB99', '#DDDDDD')
+
+
+
+
+
 RStudio multicursor: click and drag mouse down or up while holding down `option` 
 
 [Modify a package function locally in R](https://stackoverflow.com/a/49277036) 
