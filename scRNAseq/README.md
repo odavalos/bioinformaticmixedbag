@@ -5,8 +5,6 @@ Seurat and Scanpy equivalent functions.
  - If going from Seurat to scanpy need to convert Seurat object into AnnData object.
 
 
-
-
 | Seurat       | Scanpy           |
 |--------------|------------------|
 | nCount_RNA   | n_counts         |
@@ -43,9 +41,9 @@ Generating mutiple cluster resolutions in both Seurat and Scanpy:
 
 
 
-#### Scanpy
+### Misc Scanpy Functions
 
-Multiple louvain cluster resolution function.
+#### Multiple louvain cluster resolution function.
 
 
     # Depends on scanpy and numpy.
@@ -76,4 +74,26 @@ Multiple louvain cluster resolution function.
 
         if plot == True:
             sc.pl.umap(adata, color=res_list)
+
+
+#### Calculate kernel density estimate and plot for a particular gene of interest.
+
+[Plot gene expression with Kernel Density Estimation (KDE) in python.](scRNAseq/gene_kde.py)
+
+    gene_kde(adata, 'CD19', colormap = 'magma')
+
+
+Example plots generated using the pbmc3k dataset from scanpy.
+
+<img src="https://github.com/odavalos/bioinformaticmixedbag/blob/0427cb3ea2eb2932251b5bb65985cc145381941e/scRNAseq/figures/pbmc3k_kde_umap.png" width="300">
+
+<img src="https://github.com/odavalos/bioinformaticmixedbag/blob/0427cb3ea2eb2932251b5bb65985cc145381941e/scRNAseq/figures/cd19_expression_kde_umap.png" width="200" alt="expression">
+
+<img src="https://github.com/odavalos/bioinformaticmixedbag/blob/0427cb3ea2eb2932251b5bb65985cc145381941e/scRNAseq/figures/cd19_kde_umap.png" width="200" alt="kde">
+
+
+
+
+
+
 
