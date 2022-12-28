@@ -78,7 +78,7 @@ Generating mutiple cluster resolutions in both Seurat and Scanpy:
 
 #### Calculate kernel density estimate and plot for a particular gene of interest.
 
-[Plot gene expression with Kernel Density Estimation (KDE) in python.](scRNAseq/gene_kde.py)
+[Plot gene expression with Kernel Density Estimation (KDE) in python.](gene_kde.py)
 
     gene_kde(adata, 'CD19', colormap = 'magma')
 
