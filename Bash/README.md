@@ -1,5 +1,14 @@
 # Bash
 
+Edit config file ~ bash shell
+
+    emacs ~/.bashrc
+    
+Edit config file ~ zsh shell    
+
+    emacs ~/.zshrc
+
+
 List all the directories in current directory
 
     ls -ldh */
