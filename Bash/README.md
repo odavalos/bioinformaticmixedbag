@@ -8,6 +8,12 @@ Edit config file ~ zsh shell
 
     emacs ~/.zshrc
 
+#### Alias List
+
+Save me the headache! Add command confirmation.
+
+    alias rm='rm -i' # command confirmation
+    alias emacs='emacs -nw'
 
 List all the directories in current directory
 
