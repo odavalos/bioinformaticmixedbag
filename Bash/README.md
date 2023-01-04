@@ -27,6 +27,7 @@ Print the newest file in current directory (from https://unix.stackexchange.com/
 
 	cat "$(ls -rt | tail -n1)"
 
+
 Find file names without extensions in a directory. 
 
     basename -s .txt *
@@ -38,6 +39,19 @@ List full path for all subdirectories in a directory
 Get names for all files in a directory without extensions
 
     for i in *.ext; do basename $i .ext;done 
+
+
+
+Renaming files using [`rename`](https://anaconda.org/bioconda/rename) (a favorite!)
+
+	rename -v 's//GSE144236_\1/' *.csv
+	# 'raw_ig_attr_Tcell.csv' renamed to 'GSE144236_raw_ig_attr_Tcell.csv'
+
+Favorite `rename` flags
+
+- `-n/--just-print/--dry-run`
+- `-v/--verbose`
+
 
 Comparing two files using `diff`
 	
