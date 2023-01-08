@@ -104,6 +104,12 @@ Get sizes of directories based on gigs
 
     du -ch dir/ | grep '[0-9,]G'
 
+
+Get sizes of all subdirectories [(More useful examples here)](https://spapas.github.io/2018/11/12/du-disk-usage/)
+
+    du -hs *
+
+
 File Removal:
 
     rm file.txt # removes file
