@@ -23,7 +23,7 @@ Same as above just in short version
 
     ls -d */
     
-Return newest file in a directory ([source](https://stackoverflow.com/a/1015684))
+Return newest file in a directory (from https://stackoverflow.com/a/1015684)
 
     ls -Art | tail -n 1
 
