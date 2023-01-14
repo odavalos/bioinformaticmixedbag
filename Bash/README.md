@@ -22,6 +22,10 @@ List all the directories in current directory
 Same as above just in short version
 
     ls -d */
+    
+Return newest file in a directory ([source](https://stackoverflow.com/a/1015684))
+
+    ls -Art | tail -n 1
 
 Print the newest file in current directory (from https://unix.stackexchange.com/a/223305)
 
