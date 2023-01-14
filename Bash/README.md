@@ -25,7 +25,7 @@ Same as above just in short version
     
 Return newest file in a directory (from https://stackoverflow.com/a/1015684)
 
-    ls -Art | tail -n 1
+    ls -Artls | tail -n 1
 
 Print the newest file in current directory (from https://unix.stackexchange.com/a/223305)
 
