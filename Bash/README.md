@@ -90,6 +90,10 @@ Extract files
     tar -zxvf archive.tar.gz
 	-x # extract files
 
+> 	tar: Error opening archive: Unrecognized archive format 
+>
+> 	Fix: https://stackoverflow.com/a/47350025
+
 Disk usage:
 
 Lists sizes in readable size format for files in a directory
