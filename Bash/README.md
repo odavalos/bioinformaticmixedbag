@@ -131,6 +131,17 @@ Removes all files in directory ending with '.ext'
 
     rm *.ext
 
+
+---
+## Misc bioinformatic shell commands
+
+Change chromosome format in common snv file to match reference genome (https://www.biostars.org/p/98582/#332269)
+
+	for i in {1..19} X Y MT; do echo "$i chr$i" >> chr_name_conv.txt; done
+	
+	bcftools annotate --rename-chrs chr_name_conv.txt original.vcf.gz | bgzip > rename.vcf.gz
+
+
 ---
 ## Data Wrangling
 
