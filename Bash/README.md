@@ -147,6 +147,23 @@ Check if bam file tag = "CB"
 	samtools view sample_alignments.bam | head -100
 
 
+Look inside a vcf file using bcftools
+
+- Check first 100 lines
+	
+		bcftools view someSNPsfile.vcf.gz | head -100
+
+- Check first 100 lines for chromosome 2
+
+		bcftools view someSNPsfile.vcf.gz | grep 'chr2' | head -100
+
+- Check for SNPs for a particular gene
+
+		bcftools view someSNPsfile.vcf.gz | grep 'chr2' | grep 'gene_name_here'
+
+
+
+
 ---
 ## Data Wrangling
 
