@@ -242,6 +242,12 @@ Here is an example of how to create an environment with some of the essentials.
 
     conda create -n env_name python=3.9 pandas scipy numpy matplotlib seaborn
 
+
+Create a conda environment from a `.yml` file (using a new name)
+
+	conda env create -n ENVNAME --file ENV.yml
+
+
 #### My Conda setup
 
 I like to use [Emacs text editor](https://anaconda.org/conda-forge/emacs) but need to make sure to modify ~/.bashrc
