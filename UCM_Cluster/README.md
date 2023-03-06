@@ -114,4 +114,5 @@ To cancel all the jobs for a user
 
     scancel -u username
 
-
+Misc 
+https://stackoverflow.com/a/51141287
