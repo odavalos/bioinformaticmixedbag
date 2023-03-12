@@ -144,7 +144,7 @@ Change chromosome format in common snv file to match reference genome (https://w
 
 Keep only passing
 
-	bcftools view -i "%FILTER='PASS' filename.vcf.gz | bgzip > rename.vcf.gz
+	bcftools view -i "%FILTER='PASS'" filename.vcf.gz | bgzip > rename.vcf.gz
 
 
 Check if bam file tag = "CB"
