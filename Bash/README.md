@@ -142,6 +142,11 @@ Change chromosome format in common snv file to match reference genome (https://w
 	bcftools annotate --rename-chrs chr_name_conv.txt original.vcf.gz | bgzip > rename.vcf.gz
 
 
+Keep only passing
+
+	bcftools view -i "%FILTER='PASS' filename.vcf.gz | bgzip > rename.vcf.gz
+
+
 Check if bam file tag = "CB"
 	
 	samtools view sample_alignments.bam | head -100
