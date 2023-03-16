@@ -80,6 +80,18 @@ Example Cluster Script (Array Job)
 
     parallel-fastq-dump --split-files --origfmt --sra-id ${sra_a[$SLURM_ARRAY_TASK_ID]} --threads 16 --gzip
 
+
+
+Example interactive job
+
+Requesting short note (max 6hr), 1 node, 1 task per node, and for 1 hr.
+
+    salloc --partition=short --nodes=1 --ntasks-per-node=1 --time=01:00:00
+
+    srun --jobid=jobid_here --pty /bin/bash
+
+
+
 ---
 ## Useful Slurm commands
 
