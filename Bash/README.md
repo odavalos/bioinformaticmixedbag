@@ -1,5 +1,17 @@
 # Bash
 
+
+File compression
+
+	gzip file file.gz
+
+File decompression
+
+	gunzip file.gz
+	
+ - To keep original add `-k`
+
+
 Edit config file ~ bash shell
 
     emacs ~/.bashrc
