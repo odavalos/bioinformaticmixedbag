@@ -264,6 +264,10 @@ Create a conda environment from a `.yml` file (using a new name)
 
 	conda env create -n ENVNAME --file ENV.yml
 
+Export current enviroment to a `.yml`file
+
+	conda env export > environment.yml
+
 
 #### My Conda setup
 
