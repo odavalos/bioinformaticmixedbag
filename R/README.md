@@ -56,11 +56,11 @@ Here are some examples of my current installs
 
 Intel based
 
-    rig add 4.1.2-x86_64
+    rig add 4.2.2 -a x86_64
      
 M1 arm64 based (my default)
 
-    rig default 4.1-arm64
+    rig default 4.1 -a arm64
 
 
 
