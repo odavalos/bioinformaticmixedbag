@@ -67,8 +67,8 @@ M1 arm64 based (my default)
 ## Troubleshooting 
 
 
-        Using github PAT from envvar GITHUB_PAT Error: Failed to install 'unknown package' from GitHub:   
-        HTTP error 401.   
-        Bad credentials
+> Using github PAT from envvar GITHUB_PAT Error: Failed to install 'unknown package' from GitHub:   
+HTTP error 401.   
+Bad credentials
 
 Check this solution https://community.rstudio.com/t/error-failed-to-install-unknown-package-from-github-bad-credentials-rate-limit/113550
