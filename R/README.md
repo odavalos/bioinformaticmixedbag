@@ -1,5 +1,6 @@
 # R Grabbag
 
+For a collection of miscellaneous scRNAseq R functions see my R package [scGrabBag](https://github.com/odavalos/scGrabBag)
 
 #### Colorblind Friendly Palettes
 
