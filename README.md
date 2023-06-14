@@ -12,8 +12,6 @@ This repository has various notes and scripts that I have put together over the 
 
 [Python](Python/README.md)
 
-[scRNAseq](scRNAseq/README.md)
-
 [UCM Cluster](UCM_Cluster/README.md)
 
 
