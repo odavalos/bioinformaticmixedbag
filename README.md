@@ -1,5 +1,8 @@
 # My bioinformatic mixed bag
 
+![GitHub last commit](https://img.shields.io/github/last-commit/odavalos/bioinformaticmixedbag)
+
+
 ### Description
 
 This repository has various notes and scripts that I have put together over the years. Each topic has its own folder containing scripts and a markdown file with notes. 
