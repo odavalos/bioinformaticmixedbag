@@ -1,6 +1,6 @@
 # My bioinformatic mixed bag
 
-![GitHub last commit](https://img.shields.io/github/last-commit/odavalos/bioinformaticmixedbag)
+![bioinformaticmixedbag](https://img.shields.io/github/last-commit/odavalos/bioinformaticmixedbag)
 
 
 ### Description
