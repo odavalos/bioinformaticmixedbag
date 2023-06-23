@@ -50,6 +50,51 @@ Example Cluster Script (Regular Job)
     STAR --genomeDir ~/data/GCF_000001635.26_GRCm38.p6/star_index --readFilesIn $_mydir/$read1 $_mydir/$read2 --runThreadN 16 --outSAMtype BAM SortedByCoordinate --outFileNamePrefix ${base}
 
 
+Example Cluster Script (R script Job)
+
+    # Example R script Job - Running supervised pseudotime on various scRNAseq datasets.
+
+    
+    #!/bin/bash
+    #SBATCH --mail-user=username@ucmerced.edu  
+    #SBATCH --mail-type=ALL
+    #SBATCH --job-name=all_samples_psupertime
+    #SBATCH --output ~/logs/cd8scrnaseq/pseudotime/all_psupertime_%j.%N.out
+    #SBATCH --nodes=1
+    #SBATCH --ntasks=1
+    #SBATCH --cpus-per-task=20
+    #SBATCH --mem=100G
+    # #SBATCH --constraint=ib # this constraint is not working
+    #SBATCH --time=0-08:30:00
+    #SBATCH -p bigmem
+    #SBATCH --export=ALL
+    #SBATCH --oversubscribe
+    
+    source ~/.bashrc
+    
+    source activate scrnaseq_r_env
+    
+    
+    # list all samples to run psupertime on
+    samples=("all_samples_harmony_integrated_ACTIVATED_alltimepoints.rds" "all_samples_harmony_integrated_EARLYEFFECTORS_alltimepoints.rds" "all_samples_harmony_integrated_CYCLING_alltimepoints.rds" "all_samples_harmony_integrated_naive_alltimepoints.rds")
+    
+    sample_celltype=("activated" "earlyeffectors" "cycling" "naive")
+    
+    echo "Running run_psupertime.r . . ."
+    
+    for i in {0..3}
+    do
+      echo "Running psupertime on ${samples[i]} . . ."
+      echo "Cell type: ${sample_celltype[i]}"
+      Rscript ~/cd8scrnaseq/pseudotime_analysis/run_psupertime.r \
+       -s "~/cd8scrnaseq/pseudotime_analysis/data/${samples[i]}" \
+        -n "all_samples" \
+        -c "${sample_celltype[i]}" \
+        -o "~/cd8scrnaseq/pseudotime_analysis/psupertime/"
+    done
+    
+    echo "Done running run_psupertime.r . . ."
+
 
 Example Cluster Script (Array Job)
 
